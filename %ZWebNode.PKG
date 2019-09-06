@@ -730,7 +730,7 @@ customElements.define('demo-element', demoelement);
 </Class>
 
 
-<Class name="%ZWebNode.Lib.Polymer.Grid">
+<Class name="%ZWebNode.Lib.Polymer.ExsampleElement">
 <Description>
  1) все вызываемые методы пишутся с маленькими буквами https://polymer-library.polymer-project.org/3.0/docs/devguide/properties</Description>
 <Super>%RegisteredObject</Super>
@@ -771,19 +771,23 @@ customElements.define('demo-element', demoelement);
 <h1>-- [[testsendserver()]] --</h1>
 <h1>-- Time [[gettime()]] --</h1>
 <h3>[[testjs(1)]]</h3>
-<h1>---------------------</h1>
-    <input value="{{first::input}}"/><input  value="{{last::input}}"/><button on-click="MyButtonClick">add</button>
+<br/><br/><br/>
+<h1>--Вывод массива объектов --</h1>
+  |  <input value="{{first::input}}"/><input  value="{{last::input}}"/><button on-click="MyButtonClick">add</button>
     <template is="dom-repeat" id="employeeList" items="{{employees}}">
-     <div> {{index}} First name: <span>{{item.first}}</span> Last name: <span>{{item.last}}</span></div>
+     <div>| {{index}} First name: <span>{{item.first}}</span> Last name: <span>{{item.last}}</span></div>
     </template>
-<h1>---------------------</h1>
+<h1>---------------------------</h1>
+<br/><br/><br/>
 <br />   <input value="{{username::input}}"/>
 <br />  {{username}}
 <br />
+<br/><br/><br/>
 <h1>----Асинхронное обращение к серверу -----</h1>
    <button on-click="MySendButtonClick">add</button>
    {{messagetest}}
 <h1>-----------------------------------------</h1>     
+<br/><br/><br/>
 <h1>---- Редактирование объекта -----</h1>
    FIO <input value="{{userObject.FIO::input}}"/>
    Возрост <input value="{{userObject.VOZ::input}}"/>
